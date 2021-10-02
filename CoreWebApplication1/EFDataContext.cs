@@ -10,7 +10,8 @@ namespace CoreWebApplication1
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"data source=serverName; initial catalog=TestDB;persist security info=True;user id=sa");
+            //optionsBuilder.UseSqlServer(@"data source=serverName; initial catalog=TestDB;persist security info=True;user id=sa");
+            optionsBuilder.UseSqlServer(@"data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\viren\OneDrive\Documents\TestNew.mdf;Integrated Security=True;Connect Timeout=30");
         }
     }
 }
